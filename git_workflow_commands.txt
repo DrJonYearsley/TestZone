@@ -1,0 +1,62 @@
+# Some common git commands
+#
+# http://blog.osteele.com/2008/05/commit-policies/
+
+###################################
+# Set up a local git repository
+
+git init               # Initialise a git local directory (will be current directory by default)
+
+git remote add <URL>   # Add a remote repo
+
+git clone <URL>        # Like git init and git remote add   all in one
+
+git fetch              # Bring remote commit history into local, but don't merge the file changes
+
+
+###################################
+# GUI tools (very helpful tool)
+
+gitk                   # GUI tool for git
+
+
+###################################
+# View differences between remote and local
+
+git log --oneline origin/master  # Display remote repo changes
+
+git diff master origin/master    # Look at difference between local and remote repo
+
+
+
+###################################
+# Update local repo
+
+git rebase origin/master         # If local different from remote repo put local commits on top
+
+git merge origin/master          # Merge remote repo into local version
+
+git pull                         # Is equivalent to git fetch    & git merge origin/master
+
+###################################
+# Branches and moving the HEAD
+
+git branch <name>                # Create a new branch named <name>
+
+git checkout <name>              # Move HEAD to new branch named <name>
+
+git checkout master              # Move back to master branch
+
+git merge <name>                 # Merge branch <name> with the current brnach (usually the master branch)
+
+git branch - d <name>            # Delete the branch <name>
+
+###################################
+
+git add <filename>               # Add <filename> to the staging area (priot to commit)
+
+git commit -m <message>          # Commit staged files (git commit -a combines git add and git commit)
+
+git push <remote> <branch>       # Send commited files to remote repo. e.g. git push origin master
+
+
