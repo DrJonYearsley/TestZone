@@ -1,3 +1,4 @@
 # Hi.
 
+This file is not nearly as useful as Jon's git commands file.
 
