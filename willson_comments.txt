@@ -2,3 +2,5 @@
 
 This file is not nearly as useful as Jon's git commands file.
 
+
+I am adding a few new sentences.  This is likely of great import. I hope it does not disappear when we merge.
